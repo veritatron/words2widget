@@ -6,6 +6,7 @@
 const CONFIG = {
   title: "Weather",
   location: "Köln",
+  locale: "en_US", // Language for dates and weekdays
   latitude: 50.9375,
   longitude: 6.9603,
   temperatureUnit: "celsius", // "celsius" or "fahrenheit"
@@ -116,6 +117,7 @@ function dailyForecast(weather) {
 
 function formatDate(date, pattern) {
   const formatter = new DateFormatter();
+  formatter.locale = CONFIG.locale;
   formatter.dateFormat = pattern;
   return formatter.string(date);
 }
