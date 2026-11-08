@@ -27,22 +27,18 @@ Most widgets show you numbers. Yours can tell you what to do. Here are a few ide
 
 Got your own idea? Describe it in one sentence, and your AI builds it.
 
-## Get started
+## Quickstart
 
-You only set this up once. It takes about five minutes.
+### Set up once (about five minutes)
 
-**1. Get the free [Scriptable](https://apps.apple.com/app/scriptable/id1405459188) app.**
+1. **Install [Scriptable](https://apps.apple.com/app/scriptable/id1405459188).** It's free.
+2. **Copy the Widget Installer.** On your iPhone, open [the installer code](https://raw.githubusercontent.com/veritatron/words2widget/master/scriptable/Widget%20Installer.js) in Safari. Touch and hold the text, tap **Select All**, then **Copy**.
+3. **Paste it into Scriptable.** Open Scriptable, tap **+** and paste the code. Tap the name at the top, change it to `Widget Installer`, then tap **Done**.
+4. **Teach your AI.** Pick the one you use:
+   - **Claude:** Download [`scriptable-widget.zip`](https://github.com/veritatron/words2widget/releases/latest/download/scriptable-widget.zip) and upload it in Claude's settings under skills.
+   - **ChatGPT, Gemini or any other AI:** Paste the block from [`PROMPT.md`](PROMPT.md) into a new chat.
 
-**2. Add the Widget Installer.** On your iPhone, open [this code](https://raw.githubusercontent.com/veritatron/words2widget/master/scriptable/Widget%20Installer.js) in Safari. Touch and hold the text, tap **Select All**, then **Copy**. In Scriptable, tap **+**, paste it and name the script `Widget Installer`.
-
-**3. Teach your AI.** Pick the one you use:
-
-- **Claude:** Download [`scriptable-widget.zip`](https://github.com/veritatron/words2widget/releases/latest/download/scriptable-widget.zip) and upload it in Claude's settings under skills.
-- **ChatGPT, Gemini or any other AI:** Paste the block from [`PROMPT.md`](PROMPT.md) into a new chat.
-
-That's it. You're ready.
-
-## Make your first widget
+### Make a widget
 
 1. **Say what you want.** Your AI asks which language and style you'd like.
 2. **Copy the code** with the copy button.
