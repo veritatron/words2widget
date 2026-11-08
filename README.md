@@ -2,12 +2,16 @@
 
 <p align="center">
   <strong>Say what you want on your iPhone home screen. Your AI builds the widget.</strong><br>
-  No coding. No API key. Just a sentence.
+  No coding. Just a sentence.
 </p>
 
 <p align="center">
   <a href="https://github.com/veritatron/words2widget/actions/workflows/check.yml"><img src="https://github.com/veritatron/words2widget/actions/workflows/check.yml/badge.svg" alt="Checks"></a>
   <a href="LICENSE.txt"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license"></a>
+</p>
+
+<p align="center">
+  <img src="assets/demo.gif" alt="Animation: a typed sentence turns into a finished iPhone widget" width="640">
 </p>
 
 ## Widgets that answer your questions
