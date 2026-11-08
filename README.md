@@ -18,13 +18,14 @@
 
 Your weather app shows you numbers. These tell you what to do.
 
-| "What should I put on?" | "Is tonight's sunset worth it?" |
-|:---:|:---:|
-| <img src="examples/What%20to%20Wear.png" alt="What to Wear widget recommending a warm jacket" width="400"> | <img src="examples/Sunset%20Score.png" alt="Sunset Score widget rating tonight's sunset" width="400"> |
-| **"When can I see the stars?"** | **"Can I open the windows?"** |
-| <img src="examples/Star%20Night.png" alt="Star Night widget showing when the sky is clear" width="400"> | <img src="examples/Fresh%20Air.png" alt="Fresh Air widget saying the windows can be opened" width="400"> |
-| **"How long have I been alive?"** | **"What's the weather doing?"** |
-| <img src="examples/Days%20Alive.png" alt="Days Alive widget counting days lived" width="400"> | <img src="examples/Weather.png" alt="Weather widget with a three-day forecast" width="400"> |
+<p align="center">
+  <img src="examples/What%20to%20Wear.png" alt="What to Wear widget recommending a warm jacket" width="49%">
+  <img src="examples/Sunset%20Score.png" alt="Sunset Score widget rating tonight's sunset" width="49%">
+  <img src="examples/Star%20Night.png" alt="Star Night widget showing when the sky is clear" width="49%">
+  <img src="examples/Fresh%20Air.png" alt="Fresh Air widget saying the windows can be opened" width="49%">
+  <img src="examples/Days%20Alive.png" alt="Days Alive widget counting days lived" width="49%">
+  <img src="examples/Weather.png" alt="Weather widget with a three-day forecast" width="49%">
+</p>
 
 Every one of these started as a single sentence. Yours can be next.
 
