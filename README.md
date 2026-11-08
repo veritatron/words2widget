@@ -2,7 +2,7 @@
 
 <p align="center">
   <strong>Say what you want on your iPhone home screen. Your AI builds the widget.</strong><br>
-  No coding. Just a sentence.
+  No coding. Just a sentence. Works with ChatGPT, Gemini, Claude and more.
 </p>
 
 <p align="center">
@@ -14,20 +14,18 @@
   <img src="assets/demo.gif" alt="Animation: a typed sentence turns into a finished iPhone widget" width="640">
 </p>
 
-## Widgets that answer your questions
+## Make the widget you always wanted
 
-Your weather app shows you numbers. These tell you what to do.
+Most widgets show you numbers. Yours can tell you what to do. Here are a few ideas:
 
 <p align="center">
   <img src="examples/What%20to%20Wear.png" alt="What to Wear widget recommending a warm jacket" width="49%">
-  <img src="examples/Sunset%20Score.png" alt="Sunset Score widget rating tonight's sunset" width="49%">
   <img src="examples/Star%20Night.png" alt="Star Night widget showing when the sky is clear" width="49%">
   <img src="examples/Fresh%20Air.png" alt="Fresh Air widget saying the windows can be opened" width="49%">
-  <img src="examples/Days%20Alive.png" alt="Days Alive widget counting days lived" width="49%">
-  <img src="examples/Weather.png" alt="Weather widget with a three-day forecast" width="49%">
+  <img src="examples/Sunset%20Score.png" alt="Sunset Score widget rating tonight's sunset" width="49%">
 </p>
 
-Every one of these started as a single sentence. Yours can be next.
+Got your own idea? Describe it in one sentence, and your AI builds it.
 
 ## Get started
 
@@ -64,40 +62,6 @@ Steal one of these:
 
 Change a color, swap the language, make it weird. If you don't like it, just tell your AI.
 
-## How it works
-
-```mermaid
-flowchart LR
-    A[One sentence] --> B[Your AI with the skill or prompt]
-    B --> C[Scriptable script]
-    C --> D[Widget Installer]
-    D --> E[Home screen widget]
-```
-
-The design follows a few deliberate decisions:
-
-- **No backend and no API keys.** People use the AI app they already have, so the project has no running costs and no secrets to leak.
-- **Works with any AI.** The Claude skill and the copy-paste prompt share the same rules, and the installer doesn't care where the code came from.
-- **Safe by construction.** The installer only saves code. It never runs received code or downloads anything, and CI fails if it ever tries.
-- **One file per widget.** Scriptable has no build step or packages, so every example stays self-contained and easy for an AI to adapt. Shared structure comes from one template.
-
-## Quality
-
-Scriptable only runs on iOS, so checks happen in two layers:
-
-- **On every pull request:** [`scripts/check.mjs`](scripts/check.mjs) parses each script and enforces the platform rules. It blocks unavailable APIs, requires the template's essentials, and ignores comments and strings to avoid false alarms. It has no dependencies.
-- **On a real iPhone:** Every example and the full flow from sentence to widget were tested on a device, including with ChatGPT and Gemini.
-
-## Project structure
-
-| Path | What's inside |
-|---|---|
-| [`skills/scriptable-widget/SKILL.md`](skills/scriptable-widget/SKILL.md) | The source of truth for all widget rules |
-| [`PROMPT.md`](PROMPT.md) | The same rules for any chatbot |
-| [`scriptable/Widget Installer.js`](scriptable/Widget%20Installer.js) | Saves generated code as a new script |
-| [`examples/`](examples) | Ready-made widgets with screenshots |
-| [`scripts/check.mjs`](scripts/check.mjs) | Static checks, run with `node scripts/check.mjs` |
-
 ## Questions
 
 **Do I need to know how to code?**
@@ -114,6 +78,42 @@ Part of the code is probably missing. Use the copy button on the code block and 
 
 **My widget isn't updating.**
 iOS decides when widgets refresh, so it can take a while.
+
+## For developers
+
+### How it works
+
+```mermaid
+flowchart LR
+    A[One sentence] --> B[Your AI with the skill or prompt]
+    B --> C[Scriptable script]
+    C --> D[Widget Installer]
+    D --> E[Home screen widget]
+```
+
+The design follows a few deliberate decisions:
+
+- **No backend and no API keys.** People use the AI app they already have, so the project has no running costs and no secrets to leak.
+- **Works with any AI.** The Claude skill and the copy-paste prompt share the same rules, and the installer doesn't care where the code came from.
+- **Safe by construction.** The installer only saves code. It never runs received code or downloads anything, and CI fails if it ever tries.
+- **One file per widget.** Scriptable has no build step or packages, so every example stays self-contained and easy for an AI to adapt. Shared structure comes from one template.
+
+### Quality
+
+Scriptable only runs on iOS, so checks happen in two layers:
+
+- **On every pull request:** [`scripts/check.mjs`](scripts/check.mjs) parses each script and enforces the platform rules. It blocks unavailable APIs, requires the template's essentials, and ignores comments and strings to avoid false alarms. It has no dependencies.
+- **On a real iPhone:** Every example and the full flow from sentence to widget were tested on a device, including with ChatGPT and Gemini.
+
+### Project structure
+
+| Path | What's inside |
+|---|---|
+| [`skills/scriptable-widget/SKILL.md`](skills/scriptable-widget/SKILL.md) | The source of truth for all widget rules |
+| [`PROMPT.md`](PROMPT.md) | The same rules for any chatbot |
+| [`scriptable/Widget Installer.js`](scriptable/Widget%20Installer.js) | Saves generated code as a new script |
+| [`examples/`](examples) | Ready-made widgets with screenshots |
+| [`scripts/check.mjs`](scripts/check.mjs) | Static checks, run with `node scripts/check.mjs` |
 
 ---
 
