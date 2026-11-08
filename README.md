@@ -92,5 +92,10 @@ The widget rules live in [`SKILL.md`](skills/scriptable-widget/SKILL.md), and re
 
 <p align="center">
   Developed by<br><br>
-  <a href="https://github.com/veritatron"><img src="assets/veritatron.png" alt="veritatron" width="240"></a>
+  <a href="https://github.com/veritatron">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/veritatron-dark.svg">
+      <img src="assets/veritatron-light.svg" alt="veritatron" width="240">
+    </picture>
+  </a>
 </p>
