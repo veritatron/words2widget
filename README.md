@@ -32,7 +32,7 @@ Got your own idea? Describe it in one sentence, and your AI builds it.
 ### Set up once (about five minutes)
 
 1. **Install [Scriptable](https://apps.apple.com/app/scriptable/id1405459188).** It's free.
-2. **Copy the Widget Installer.** On your iPhone, open [the installer page](https://veritatron.github.io/words2widget/) and tap **Copy Widget Installer**.
+2. **Copy the Widget Installer.** On your iPhone, open [the installer page](INSTALLER.md) in Safari and tap the copy button on the code block. If it opens in the GitHub app, touch and hold the link and choose **Open in Safari** instead.
 3. **Paste it into Scriptable.** Open Scriptable, tap **+** and paste the code. Tap the name at the top, change it to `Widget Installer`, then tap **Done**.
 4. **Teach your AI.** Pick the one you use:
    - **Claude:** Download [`scriptable-widget.zip`](https://github.com/veritatron/words2widget/releases/latest/download/scriptable-widget.zip) and upload it in Claude's settings under skills.
