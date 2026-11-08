@@ -83,7 +83,8 @@ words2widget/
 - Every example follows the skill's template exactly.
 - Prefer data sources without API keys, such as Open-Meteo, or native data like calendar events and battery level.
 - Every example comes with a screenshot (`<name>.png`) for the README.
-- First candidates: weather, countdown, upcoming events, days-alive counter.
+- Prefer widgets that answer a question over widgets that only show data.
+- Current set: Weather, Days Alive, Sunset Score, Star Night, Fresh Air, What to Wear.
 
 ## Conventions
 
