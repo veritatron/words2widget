@@ -8,8 +8,6 @@
 <p align="center">
   <a href="https://github.com/veritatron/words2widget/actions/workflows/check.yml"><img src="https://github.com/veritatron/words2widget/actions/workflows/check.yml/badge.svg" alt="Checks"></a>
   <a href="LICENSE.txt"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license"></a>
-  <img src="https://img.shields.io/badge/API%20key-not%20needed-brightgreen" alt="No API key needed">
-  <a href="https://scriptable.app"><img src="https://img.shields.io/badge/built%20for-Scriptable-black" alt="Built for Scriptable"></a>
 </p>
 
 ## Widgets that answer your questions
@@ -61,6 +59,40 @@ Steal one of these:
 
 Change a color, swap the language, make it weird. If you don't like it, just tell your AI.
 
+## How it works
+
+```mermaid
+flowchart LR
+    A[One sentence] --> B[Your AI with the skill or prompt]
+    B --> C[Scriptable script]
+    C --> D[Widget Installer]
+    D --> E[Home screen widget]
+```
+
+The design follows a few deliberate decisions:
+
+- **No backend and no API keys.** People use the AI app they already have, so the project has no running costs and no secrets to leak.
+- **Works with any AI.** The Claude skill and the copy-paste prompt share the same rules, and the installer doesn't care where the code came from.
+- **Safe by construction.** The installer only saves code. It never runs received code or downloads anything, and CI fails if it ever tries.
+- **One file per widget.** Scriptable has no build step or packages, so every example stays self-contained and easy for an AI to adapt. Shared structure comes from one template.
+
+## Quality
+
+Scriptable only runs on iOS, so checks happen in two layers:
+
+- **On every pull request:** [`scripts/check.mjs`](scripts/check.mjs) parses each script and enforces the platform rules. It blocks unavailable APIs, requires the template's essentials, and ignores comments and strings to avoid false alarms. It has no dependencies.
+- **On a real iPhone:** Every example and the full flow from sentence to widget were tested on a device, including with ChatGPT and Gemini.
+
+## Project structure
+
+| Path | What's inside |
+|---|---|
+| [`skills/scriptable-widget/SKILL.md`](skills/scriptable-widget/SKILL.md) | The source of truth for all widget rules |
+| [`PROMPT.md`](PROMPT.md) | The same rules for any chatbot |
+| [`scriptable/Widget Installer.js`](scriptable/Widget%20Installer.js) | Saves generated code as a new script |
+| [`examples/`](examples) | Ready-made widgets with screenshots |
+| [`scripts/check.mjs`](scripts/check.mjs) | Static checks, run with `node scripts/check.mjs` |
+
 ## Questions
 
 **Do I need to know how to code?**
@@ -78,19 +110,10 @@ Part of the code is probably missing. Use the copy button on the code block and 
 **My widget isn't updating.**
 iOS decides when widgets refresh, so it can take a while.
 
-## For developers
-
-Using Claude Code? Run `npx skills add veritatron/words2widget`.
-
-The widget rules live in [`SKILL.md`](skills/scriptable-widget/SKILL.md), and ready-made widgets in [`examples/`](examples). Run `node scripts/check.mjs` to check all scripts.
-
-## License
-
-[MIT](LICENSE.txt)
-
 ---
 
 <p align="center">
+  Released under the <a href="LICENSE.txt">MIT License</a>.<br><br>
   Developed by<br><br>
   <a href="https://github.com/veritatron">
     <picture>
