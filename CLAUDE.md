@@ -4,7 +4,7 @@
 
 ## What this project is about
 
-Creating your own iPhone widgets should be as easy as sending a message: "I'd like a widget that shows the weather in Koblenz." The AI turns that into a working Scriptable script, and the user moves it onto their iPhone with a few taps, without knowing JavaScript or the Scriptable API.
+Creating your own iPhone widgets should be as easy as sending a message: "I'd like a widget that shows the weather in Köln." The AI turns that into a working Scriptable script, and the user moves it onto their iPhone with a few taps, without knowing JavaScript or the Scriptable API.
 
 The repo is meant to be usable by **anyone, with no technical background**. It will be promoted on the **veritatron** social media channel, for example with a "new widget every week" series.
 
@@ -59,7 +59,7 @@ words2widget/
 
 ### Skill (`skills/scriptable-widget/SKILL.md`)
 
-- Turns one sentence into a finished script and asks at most one follow-up question.
+- Turns one sentence into a finished script. Sends one short follow-up message that asks for the widget's language and style, plus anything else it can't build without, and skips what the user already stated.
 - Contains the script template, the Scriptable API reference, design rules and a checklist.
 - Must be uploadable to Claude as a ZIP and work in Claude Code via `npx skills add veritatron/words2widget`.
 

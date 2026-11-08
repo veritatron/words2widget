@@ -5,9 +5,9 @@
 // Change these values to make the widget your own.
 const CONFIG = {
   title: "Weather",
-  location: "Koblenz",
-  latitude: 50.3569,
-  longitude: 7.589,
+  location: "Köln",
+  latitude: 50.9375,
+  longitude: 6.9603,
   temperatureUnit: "celsius", // "celsius" or "fahrenheit"
   refreshMinutes: 30,
   previewSize: "medium", // Size shown when run in the app: "small", "medium" or "large"
