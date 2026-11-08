@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Widget Installer · words2widget</title>
+  <meta name="description" content="Copy the Widget Installer for Scriptable with one tap.">
+  <style>
+    :root {
+      --background: #212326;
+      --text: #f7f5ef;
+      --muted: #a9adb3;
+      --accent: #ffd400;
+      --on-accent: #212326;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 32px 20px;
+      background: var(--background);
+      color: var(--text);
+      font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main { width: 100%; max-width: 440px; margin: 0 auto; }
+
+    .eyebrow { margin: 0 0 8px; color: var(--accent); font-weight: 700; }
+
+    h1 { margin: 0 0 12px; font-size: 34px; line-height: 1.15; }
+
+    .intro { margin: 0 0 28px; color: var(--muted); }
+
+    button {
+      width: 100%;
+      padding: 18px 20px;
+      border: 0;
+      border-radius: 16px;
+      background: var(--accent);
+      color: var(--on-accent);
+      font: inherit;
+      font-size: 19px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:disabled { opacity: 0.55; cursor: default; }
+
+    .status { min-height: 26px; margin: 12px 0 24px; color: var(--muted); text-align: center; }
+
+    ol { margin: 0; padding-left: 22px; }
+
+    li { margin-bottom: 8px; }
+
+    footer { margin-top: 44px; text-align: center; color: var(--muted); font-size: 14px; }
+
+    footer svg { display: block; width: 150px; margin: 10px auto 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">words2widget</p>
+    <h1>Add the Widget Installer</h1>
+    <p class="intro">You only need to do this once. It saves the widgets your AI builds into Scriptable.</p>
+
+    <button id="copy" type="button" disabled>Loading…</button>
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+
+    <ol>
+      <li>Open <strong>Scriptable</strong> and tap <strong>+</strong>.</li>
+      <li>Paste the code.</li>
+      <li>Tap the name at the top and call it <strong>Widget Installer</strong>.</li>
+      <li>Tap <strong>Done</strong>.</li>
+    </ol>
+  </main>
+
+  <footer>
+    Developed by
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="191 302 1212 296" role="img" aria-label="veritatron">
+      <polygon points="205.61,338.82 271.50,338.82 334.50,513.82 334.50,590.00 296.20,590.00" fill="#FFD400"/>
+      <polygon points="473.26,314.12 407.38,314.12 344.38,489.12 344.38,565.29 382.67,565.29" fill="#F7F5EF"/>
+      <path d="M606.50 524.52L568.50 524.52L538.48 430.28L563.94 430.28L585.79 507.04L589.21 507.04L611.06 430.28L636.52 430.28L606.50 524.52ZM687.14 527.18L687.14 527.18Q673.08 527.18 662.34 521.19Q651.61 515.21 645.62 504.28Q639.64 493.36 639.64 478.54L639.64 478.54L639.64 476.26Q639.64 461.44 645.53 450.51Q651.42 439.59 662.06 433.60Q672.70 427.62 686.76 427.62L686.76 427.62Q700.63 427.62 710.89 433.79Q721.15 439.97 726.85 450.89Q732.55 461.82 732.55 476.26L732.55 476.26L732.55 484.43L663.96 484.43Q664.34 494.12 671.18 500.20Q678.02 506.28 687.90 506.28L687.90 506.28Q697.97 506.28 702.72 501.91Q707.47 497.54 709.94 492.22L709.94 492.22L729.51 502.48Q726.85 507.42 721.82 513.22Q716.78 519.01 708.42 523.10Q700.06 527.18 687.14 527.18ZM664.15 466.57L664.15 466.57L708.23 466.57Q707.47 458.40 701.68 453.46Q695.88 448.52 686.57 448.52L686.57 448.52Q676.88 448.52 671.18 453.46Q665.48 458.40 664.15 466.57ZM771.77 524.52L747.83 524.52L747.83 430.28L771.39 430.28L771.39 440.92L774.81 440.92Q776.90 435.22 781.75 432.56Q786.59 429.90 793.05 429.90L793.05 429.90L804.45 429.90L804.45 451.18L792.67 451.18Q783.55 451.18 777.66 456.02Q771.77 460.87 771.77 470.94L771.77 470.94L771.77 524.52ZM841.01 524.52L817.07 524.52L817.07 430.28L841.01 430.28L841.01 524.52ZM829.04 419.26L829.04 419.26Q822.58 419.26 818.12 415.08Q813.65 410.90 813.65 404.06L813.65 404.06Q813.65 397.22 818.12 393.04Q822.58 388.86 829.04 388.86L829.04 388.86Q835.69 388.86 840.06 393.04Q844.43 397.22 844.43 404.06L844.43 404.06Q844.43 410.90 840.06 415.08Q835.69 419.26 829.04 419.26ZM924.31 524.52L897.71 524.52Q888.40 524.52 882.61 518.73Q876.81 512.93 876.81 503.24L876.81 503.24L876.81 450.04L853.25 450.04L853.25 430.28L876.81 430.28L876.81 401.02L900.75 401.02L900.75 430.28L926.59 430.28L926.59 450.04L900.75 450.04L900.75 499.06Q900.75 504.76 906.07 504.76L906.07 504.76L924.31 504.76L924.31 524.52ZM971.51 527.18L971.51 527.18Q961.44 527.18 953.46 523.66Q945.48 520.15 940.83 513.40Q936.17 506.66 936.17 496.97L936.17 496.97Q936.17 487.28 940.83 480.72Q945.48 474.17 953.75 470.84Q962.01 467.52 972.65 467.52L972.65 467.52L998.49 467.52L998.49 462.20Q998.49 455.55 994.31 451.27Q990.13 447 981.01 447L981.01 447Q972.08 447 967.71 451.08Q963.34 455.17 962.01 461.63L962.01 461.63L939.97 454.22Q942.25 447 947.29 441.01Q952.32 435.03 960.78 431.32Q969.23 427.62 981.39 427.62L981.39 427.62Q1000.01 427.62 1010.84 436.93Q1021.67 446.24 1021.67 463.91L1021.67 463.91L1021.67 499.06Q1021.67 504.76 1026.99 504.76L1026.99 504.76L1034.60 504.76L1034.60 524.52L1018.63 524.52Q1011.60 524.52 1007.04 521.10Q1002.48 517.68 1002.48 511.98L1002.48 511.98L1002.48 511.79L998.87 511.79Q998.11 514.07 995.45 517.77Q992.79 521.48 987.09 524.33Q981.39 527.18 971.51 527.18ZM975.69 507.80L975.69 507.80Q985.76 507.80 992.13 502.19Q998.49 496.59 998.49 487.28L998.49 487.28L998.49 485.38L974.36 485.38Q967.71 485.38 963.91 488.23Q960.11 491.08 960.11 496.21L960.11 496.21Q960.11 501.34 964.10 504.57Q968.09 507.80 975.69 507.80Z" fill="#FFD400"/>
+      <path d="M1108.78 506.52L1082.18 506.52Q1072.87 506.52 1067.07 500.72Q1061.28 494.93 1061.28 485.24L1061.28 485.24L1061.28 432.04L1037.72 432.04L1037.72 412.28L1061.28 412.28L1061.28 383.02L1085.22 383.02L1085.22 412.28L1111.06 412.28L1111.06 432.04L1085.22 432.04L1085.22 481.06Q1085.22 486.76 1090.54 486.76L1090.54 486.76L1108.78 486.76L1108.78 506.52ZM1150.66 506.52L1126.72 506.52L1126.72 412.28L1150.28 412.28L1150.28 422.92L1153.70 422.92Q1155.79 417.22 1160.63 414.56Q1165.48 411.90 1171.94 411.90L1171.94 411.90L1183.34 411.90L1183.34 433.18L1171.56 433.18Q1162.44 433.18 1156.55 438.02Q1150.66 442.87 1150.66 452.94L1150.66 452.94L1150.66 506.52ZM1237.38 509.18L1237.38 509.18Q1223.32 509.18 1212.11 503.48Q1200.90 497.78 1194.44 486.95Q1187.98 476.12 1187.98 460.92L1187.98 460.92L1187.98 457.88Q1187.98 442.68 1194.44 431.85Q1200.90 421.02 1212.11 415.32Q1223.32 409.62 1237.38 409.62L1237.38 409.62Q1251.44 409.62 1262.65 415.32Q1273.86 421.02 1280.32 431.85Q1286.78 442.68 1286.78 457.88L1286.78 457.88L1286.78 460.92Q1286.78 476.12 1280.32 486.95Q1273.86 497.78 1262.65 503.48Q1251.44 509.18 1237.38 509.18ZM1237.38 487.90L1237.38 487.90Q1248.40 487.90 1255.62 480.77Q1262.84 473.65 1262.84 460.35L1262.84 460.35L1262.84 458.45Q1262.84 445.15 1255.71 438.02Q1248.59 430.90 1237.38 430.90L1237.38 430.90Q1226.36 430.90 1219.14 438.02Q1211.92 445.15 1211.92 458.45L1211.92 458.45L1211.92 460.35Q1211.92 473.65 1219.14 480.77Q1226.36 487.90 1237.38 487.90ZM1326.76 506.52L1302.82 506.52L1302.82 412.28L1326.38 412.28L1326.38 424.63L1329.80 424.63Q1332.08 419.69 1338.35 415.22Q1344.62 410.76 1357.35 410.76L1357.35 410.76Q1368.37 410.76 1376.64 415.79Q1384.90 420.83 1389.46 429.66Q1394.02 438.50 1394.02 450.28L1394.02 450.28L1394.02 506.52L1370.08 506.52L1370.08 452.18Q1370.08 441.54 1364.86 436.22Q1359.63 430.90 1349.94 430.90L1349.94 430.90Q1338.92 430.90 1332.84 438.21Q1326.76 445.53 1326.76 458.64L1326.76 458.64L1326.76 506.52Z" fill="#F7F5EF"/>
+    </svg>
+  </footer>
+
+  <script>
+    const SOURCE_URL = "https://raw.githubusercontent.com/veritatron/words2widget/master/scriptable/Widget%20Installer.js";
+    const copyButton = document.getElementById("copy");
+    const statusText = document.getElementById("status");
+    const BUTTON_LABEL = "Copy Widget Installer";
+
+    let installerCode = "";
+
+    async function loadInstaller() {
+      try {
+        const response = await fetch(SOURCE_URL, { cache: "no-cache" });
+        if (!response.ok) throw new Error(`Request failed with status ${response.status}`);
+        installerCode = await response.text();
+        copyButton.textContent = BUTTON_LABEL;
+        copyButton.disabled = false;
+      } catch {
+        copyButton.textContent = "Couldn't load the code";
+        statusText.textContent = "Check your connection and reload this page.";
+      }
+    }
+
+    function copyWithSelection(text) {
+      const field = document.createElement("textarea");
+      field.value = text;
+      field.setAttribute("readonly", "");
+      field.style.position = "fixed";
+      field.style.opacity = "0";
+      document.body.append(field);
+      field.select();
+      field.setSelectionRange(0, text.length);
+      const copied = document.execCommand("copy");
+      field.remove();
+      if (!copied) throw new Error("Copy failed");
+    }
+
+    async function copyInstaller() {
+      try {
+        if (navigator.clipboard) await navigator.clipboard.writeText(installerCode);
+        else copyWithSelection(installerCode);
+        copyButton.textContent = "Copied!";
+        statusText.textContent = "Now open Scriptable and follow the steps below.";
+      } catch {
+        statusText.textContent = "Copying didn't work. Please try again.";
+      }
+    }
+
+    copyButton.addEventListener("click", copyInstaller);
+    loadInstaller();
+  </script>
+</body>
+</html>

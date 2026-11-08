@@ -37,7 +37,7 @@ words2widget/
 ├── CLAUDE.md                         # This file
 ├── README.md                         # GIF, one-liner, quickstart
 ├── PROMPT.md                         # Copy-paste prompt for any AI
-├── INSTALLER.md                      # Widget Installer code behind a copy button, kept in sync by the check
+├── docs/index.html                   # One-tap copy page for the Widget Installer (GitHub Pages)
 ├── LICENSE                           # MIT
 ├── CHANGELOG.md
 ├── skills/
