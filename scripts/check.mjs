@@ -9,7 +9,8 @@ import { fileURLToPath } from "node:url";
 
 const INSTALLER_SCRIPT = join("scriptable", "Widget Installer.js");
 const INSTALLER_PAGE = "INSTALLER.md";
-const INSTALLER_PAGE_CODE_BLOCK = /^````[^\n]*\n([\s\S]*?)^````$/m;
+const EXAMPLES_DIRECTORY = "examples";
+const SCRIPT_PAGE_CODE_BLOCK = /^````[^\n]*\n([\s\S]*?)^````$/m;
 
 const FORBIDDEN_IN_ALL_SCRIPTS = [
   "fetch",
@@ -252,15 +253,32 @@ function findScripts(root) {
   });
 }
 
-function checkInstallerPage(root) {
-  const scriptPath = join(root, INSTALLER_SCRIPT);
-  const pagePath = join(root, INSTALLER_PAGE);
-  if (!existsSync(scriptPath) || !existsSync(pagePath)) return [];
+// Each page offers a script behind a copy button, so its code block must match the script.
+function findScriptPages(root) {
+  const examples = join(root, EXAMPLES_DIRECTORY);
+  const examplePages = existsSync(examples)
+    ? readdirSync(examples)
+        .filter((file) => file.endsWith(".js"))
+        .sort()
+        .map((file) => ({
+          script: join(EXAMPLES_DIRECTORY, file),
+          page: join(EXAMPLES_DIRECTORY, file.replace(/\.js$/, ".md")),
+          isRequired: true,
+        }))
+    : [];
+  return [{ script: INSTALLER_SCRIPT, page: INSTALLER_PAGE, isRequired: false }, ...examplePages];
+}
+
+function checkScriptPage(root, { script, page, isRequired }) {
+  const scriptPath = join(root, script);
+  const pagePath = join(root, page);
+  if (!existsSync(scriptPath)) return [];
+  if (!existsSync(pagePath)) return isRequired ? [`Missing copy page for ${script}`] : [];
 
   const normalize = (text) => text.replace(/\r\n/g, "\n").trim();
-  const pageCode = normalize(readFileSync(pagePath, "utf8")).match(INSTALLER_PAGE_CODE_BLOCK)?.[1] ?? "";
+  const pageCode = normalize(readFileSync(pagePath, "utf8")).match(SCRIPT_PAGE_CODE_BLOCK)?.[1] ?? "";
   const isInSync = normalize(pageCode) === normalize(readFileSync(scriptPath, "utf8"));
-  return isInSync ? [] : [`Code differs from ${INSTALLER_SCRIPT}`];
+  return isInSync ? [] : [`Code differs from ${script}`];
 }
 
 function reportFile(name, problems) {
@@ -290,11 +308,17 @@ function main() {
     if (problems.length > 0) failedCount++;
   }
 
-  const pageProblems = checkInstallerPage(root);
-  if (pageProblems.length > 0) reportFile(INSTALLER_PAGE, pageProblems);
+  let failedPageCount = 0;
+  for (const scriptPage of findScriptPages(root)) {
+    const problems = checkScriptPage(root, scriptPage);
+    if (problems.length > 0) {
+      reportFile(scriptPage.page, problems);
+      failedPageCount++;
+    }
+  }
 
   console.log(`\n${scripts.length - failedCount} of ${scripts.length} scripts passed.`);
-  return failedCount === 0 && pageProblems.length === 0 ? 0 : 1;
+  return failedCount === 0 && failedPageCount === 0 ? 0 : 1;
 }
 
 process.exitCode = main();

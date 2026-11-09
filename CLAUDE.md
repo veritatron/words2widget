@@ -45,7 +45,7 @@ words2widget/
 │       └── SKILL.md                  # Core: rules, template, API reference
 ├── scriptable/
 │   └── Widget Installer.js           # Takes code from share sheet/clipboard, saves it as a script
-├── examples/                         # Ready-made widgets, one .js file plus screenshot each
+├── examples/                         # Ready-made widgets: .js file, screenshot and copy page (.md, kept in sync by the check) each
 ├── scripts/
 │   └── check.mjs                     # Syntax and rule checks for all scripts
 └── .github/
