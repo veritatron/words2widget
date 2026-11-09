@@ -1,4 +1,9 @@
-<h1 align="center">words2widget</h1>
+<h1 align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/wordmark-dark.png">
+    <img src="assets/wordmark-light.png" alt="words2widget" width="420">
+  </picture>
+</h1>
 
 <p align="center">
   <strong>Say what you want on your iPhone home screen. Your AI builds the widget.</strong><br>
@@ -6,8 +11,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/veritatron/words2widget/actions/workflows/check.yml"><img src="https://github.com/veritatron/words2widget/actions/workflows/check.yml/badge.svg" alt="Checks"></a>
-  <a href="LICENSE.txt"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license"></a>
+  <a href="https://github.com/veritatron/words2widget/actions/workflows/check.yml"><img src="https://img.shields.io/github/actions/workflow/status/veritatron/words2widget/check.yml?branch=master&label=checks&labelColor=212327&color=FFD500&style=flat-square" alt="Checks"></a>
+  <a href="LICENSE.txt"><img src="https://img.shields.io/badge/license-MIT-FFD500?labelColor=212327&style=flat-square" alt="MIT license"></a>
 </p>
 
 <p align="center">
@@ -38,7 +43,7 @@ Small, medium or large. The layout adapts, so every size is made to be read at a
 <br clear="both">
 <br>
 
-<a href="examples/Weekly%20Load.md"><img align="right" width="46%" src="examples/Weekly%20Load.png" alt="Weekly Load widget with booked hours per day for this week and next"></a>
+<a href="examples/Weekly%20Load.md"><img align="right" width="46%" src="assets/feature-day.png" alt="Weekly Load widget with booked hours per day for this week and next"></a>
 
 ### Built around your day
 
@@ -61,12 +66,12 @@ No new app to learn, no API key and no subscription. Scriptable is free, and the
 Tap a widget, copy it, and it's yours. Got your own idea? Describe it in one sentence.
 
 <p align="center">
-  <a href="examples/Air%20Out.md"><img src="examples/Air%20Out.png" alt="Air Out widget saying the windows can be opened now" width="49%"></a>
-  <a href="examples/Water.md"><img src="examples/Water.png" alt="Water widget tracking glasses of water today" width="49%"></a>
+  <a href="examples/Air%20Out.md"><img src="assets/card-air-out.png" alt="Air Out widget saying the windows can be opened now" width="49%"></a>
+  <a href="examples/Water.md"><img src="assets/card-water.png" alt="Water widget tracking glasses of water today" width="49%"></a>
 </p>
 <p align="center">
-  <a href="examples/Run%20Today.md"><img src="examples/Run%20Today.png" alt="Run Today widget with the current weather for a run" width="49%"></a>
-  <a href="examples/Top%20Repos.md"><img src="examples/Top%20Repos.png" alt="Top Repos widget listing this week's most-starred GitHub repositories" width="49%"></a>
+  <a href="examples/Run%20Today.md"><img src="assets/card-run-today.png" alt="Run Today widget with the current weather for a run" width="49%"></a>
+  <a href="examples/Top%20Repos.md"><img src="assets/card-top-repos.png" alt="Top Repos widget listing this week's most-starred GitHub repositories" width="49%"></a>
 </p>
 
 ## Quickstart
