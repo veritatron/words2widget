@@ -25,7 +25,7 @@ Most widgets show you numbers. Yours can answer your questions.
 
 <br>
 
-<a href="examples/Train%20Commute.md"><img align="right" width="46%" src="assets/feature-sentence.png" alt="A sentence asking about a train, above the finished Train Commute widget"></a>
+<img align="right" width="46%" src="assets/feature-sentence.png" alt="A sentence asking about a train, above the finished Train Commute widget">
 
 ### Say it in one sentence
 
@@ -43,7 +43,16 @@ Small, medium or large. The layout adapts, so every size is made to be read at a
 <br clear="both">
 <br>
 
-<a href="examples/Weekly%20Load.md"><img align="right" width="46%" src="assets/feature-day.png" alt="Weekly Load widget with booked hours per day for this week and next"></a>
+<img align="right" width="46%" src="assets/feature-design.png" alt="The same Top Repos widget in a clean style and in a terminal style">
+
+### In any style you want
+
+Clean like Apple, retro like a terminal, loud, playful or in your team's colors. Just say how it should look, and your widget follows.
+
+<br clear="both">
+<br>
+
+<img align="left" hspace="14" width="46%" src="assets/feature-day.png" alt="Weekly Load widget with booked hours per day for this week and next">
 
 ### Built around your day
 
@@ -52,7 +61,7 @@ Your calendar, reminders, location and the weather outside. Your widget uses wha
 <br clear="both">
 <br>
 
-<img align="left" hspace="14" width="46%" src="assets/feature-any-ai.png" alt="Claude, ChatGPT, Gemini or any free chatbot, with no API key and no cost">
+<img align="right" width="46%" src="assets/feature-any-ai.png" alt="Claude, ChatGPT, Gemini or any free chatbot, with no API key and no cost">
 
 ### Works with the AI you already use
 
@@ -61,18 +70,20 @@ No new app to learn, no API key and no subscription. Scriptable is free, and the
 <br clear="both">
 <br>
 
-### Start with one of these
+### A few ideas to get you started
 
-Tap a widget, copy it, and it's yours. Got your own idea? Describe it in one sentence.
+Got your own? Describe it in one sentence, and your AI builds it.
 
 <p align="center">
-  <a href="examples/Air%20Out.md"><img src="assets/card-air-out.png" alt="Air Out widget saying the windows can be opened now" width="49%"></a>
-  <a href="examples/Water.md"><img src="assets/card-water.png" alt="Water widget tracking glasses of water today" width="49%"></a>
+  <img src="assets/card-air-out.png" alt="Air Out widget saying the windows can be opened now" width="49%">
+  <img src="assets/card-water.png" alt="Water widget tracking glasses of water today" width="49%">
 </p>
 <p align="center">
-  <a href="examples/Run%20Today.md"><img src="assets/card-run-today.png" alt="Run Today widget with the current weather for a run" width="49%"></a>
-  <a href="examples/Top%20Repos.md"><img src="assets/card-top-repos.png" alt="Top Repos widget listing this week's most-starred GitHub repositories" width="49%"></a>
+  <img src="assets/card-run-today.png" alt="Run Today widget with the current weather for a run" width="49%">
+  <img src="assets/card-top-repos.png" alt="Top Repos widget listing this week's most-starred GitHub repositories" width="49%">
 </p>
+
+<sub>Train Commute uses timetable data from <a href="https://transitous.org">Transitous</a> and <a href="https://transitous.org/sources/">its data sources</a>, including OpenStreetMap.</sub>
 
 ## Quickstart
 
@@ -94,69 +105,39 @@ Tap a widget, copy it, and it's yours. Got your own idea? Describe it in one sen
 
 ## Not sure what to ask for?
 
-Steal one of these:
+The best widgets are the ones you look at every day. Steal one of these:
 
-- "Is it barbecue weather this weekend?"
-- "Should I bike or take the bus today?"
-- "Do I need sunscreen at noon?"
-- "How much of this week is already over?"
-- "How many days until my next vacation?"
-- "How much of my day is still free?"
+- "What should I wear today?"
+- "Will it rain on my way to work or back home?"
+- "How long until my next meeting?"
+- "How much of today is still free in my calendar?"
+- "What's on my to-do list for today?"
+- "How many days until the weekend and until payday?"
 
 Change a color, swap the language, make it weird. If you don't like it, just tell your AI.
 
 ## Questions
 
-**Do I need to know how to code?**
-No. You never have to read or change the code.
+**How do I change a widget?**
+Tell your AI what to change and copy the new code. Run Widget Installer, keep the same name and tap **Replace**.
+
+**Does it cost anything?**
+Scriptable is free, and widgets only use data sources that need no API key. `PROMPT.md` is made to fit free chatbots. Uploading the skill depends on your Claude plan.
 
 **Is it safe?**
-Widget Installer only saves code you hand to it. It never runs that code and never downloads anything.
+Widget Installer only saves the code you give it. Once it's on your home screen, a widget runs like any other Scriptable script, so only use code from an AI or person you trust.
 
-**What does it cost?**
-Scriptable is free, and there are no API keys to pay for. `PROMPT.md` is made to fit free chatbots. Uploading skills depends on your Claude plan.
+**Which devices does it work on?**
+iPhones with Scriptable, on the home screen. Android and lock screen widgets aren't supported.
 
-**It says "No widget found".**
-Part of the code is probably missing. Use the copy button on the code block and try again.
+**Widget Installer says "No widget found".**
+It couldn't find a complete widget on your clipboard. Tap the copy button on the code block and run it again.
+
+**My widget shows an error.**
+It may need access to your calendar, reminders or location. Open Scriptable, run the script once and allow access.
 
 **My widget isn't updating.**
-iOS decides when widgets refresh, so it can take a while.
-
-## For developers
-
-### How it works
-
-```mermaid
-flowchart LR
-    A[One sentence] --> B[Your AI with the skill or prompt]
-    B --> C[Scriptable script]
-    C --> D[Widget Installer]
-    D --> E[Home screen widget]
-```
-
-The design follows a few deliberate decisions:
-
-- **No backend and no API keys.** People use the AI app they already have, so the project has no running costs and no secrets to leak.
-- **Works with any AI.** The Claude skill and the copy-paste prompt share the same rules, and the installer doesn't care where the code came from.
-- **Safe by construction.** The installer only saves code. It never runs received code or downloads anything, and CI fails if it ever tries.
-- **One file per widget.** Scriptable has no build step or packages, so every example stays self-contained and easy for an AI to adapt. Shared structure comes from one template.
-
-### Quality
-
-Scriptable only runs on iOS, so checks happen in two layers:
-
-- **On every pull request:** [`scripts/check.mjs`](scripts/check.mjs) parses each script and enforces the platform rules. It blocks unavailable APIs, requires the template's essentials, and ignores comments and strings to avoid false alarms. It has no dependencies.
-- **On a real iPhone:** Every example and the full flow from sentence to widget were tested on a device, including with ChatGPT and Gemini.
-
-### Project structure
-
-| Path | What's inside |
-|---|---|
-| [`skills/scriptable-widget/SKILL.md`](skills/scriptable-widget/SKILL.md) | The source of truth for all widget rules |
-| [`PROMPT.md`](PROMPT.md) | The same rules for any chatbot |
-| [`scriptable/Widget Installer.js`](scriptable/Widget%20Installer.js) | Saves generated code as a new script |
-| [`examples/`](examples) | Ready-made widgets with screenshots |
-| [`scripts/check.mjs`](scripts/check.mjs) | Static checks, run with `node scripts/check.mjs` |
+iOS decides when widgets refresh, so new data can take a while to appear.
 
 ---
 
