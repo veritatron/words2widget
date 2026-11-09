@@ -85,14 +85,14 @@ words2widget/
 - Prefer data sources without API keys, such as Open-Meteo, or native data like calendar events and battery level.
 - Every example comes with a screenshot (`<name>.png`) for the README.
 - Prefer widgets that answer a question over widgets that only show data.
-- Current set: Weather, Days Alive, Sunset Score, Star Night, Fresh Air, What to Wear.
+- Current set: Air Out, Train Commute, Weekly Load, Run Today, Top Repos.
 
 ## Conventions
 
 - **Language:** Everything is in English: code, comments, docs, README, `PROMPT.md`, commit messages.
 - **JavaScript:** Modern JavaScript as supported by Scriptable (top-level `await`, `async`/`await`, optional chaining). No TypeScript, no build step, no npm dependencies in Scriptable scripts.
 - **Scriptable limits:** No DOM, no `fetch`, no `require`, no `localStorage`. Networking only via `Request`, files via `FileManager`. Details are in the skill.
-- **File names:** Scriptable scripts are named exactly as they should appear in the app, with spaces and capitals (`Widget Installer.js`, `Weather.js`).
+- **File names:** Scriptable scripts are named exactly as they should appear in the app, with spaces and capitals (`Widget Installer.js`, `Train Commute.js`).
 - **Metadata header:** Every Scriptable script starts with Scriptable's comment header (`icon-color`, `icon-glyph`).
 - **Commits:** Conventional Commits (`feat:`, `fix:`, `docs:`, `chore:`).
 
@@ -111,16 +111,8 @@ words2widget/
 - On a tag, `release.yml` builds a ZIP of `skills/scriptable-widget/` and attaches it, together with `Widget Installer.js`, to the GitHub release.
 - Changes are recorded in `CHANGELOG.md`.
 
-## Scope of the first version (MVP)
+## Out of scope
 
-Included:
-- Skill, `PROMPT.md`, Widget Installer
-- Three to four examples with screenshots
-- README with GIF and quickstarts for Claude and for other AIs
-- Check script and GitHub Actions for checks and releases
-- MIT license
-
-Deliberately excluded:
 - Browser preview or simulator on desktop. It is a lot of work, will never be exact, and can come later if users ask for it.
 - Any solution involving an API key or a server of our own.
 - Support for other widget apps such as Await or Scripting.
