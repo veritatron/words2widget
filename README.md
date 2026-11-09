@@ -19,10 +19,10 @@
 Most widgets show you numbers. Yours can tell you what to do. Here are a few ideas:
 
 <p align="center">
-  <img src="examples/What%20to%20Wear.png" alt="What to Wear widget recommending a warm jacket" width="49%">
-  <img src="examples/Star%20Night.png" alt="Star Night widget showing when the sky is clear" width="49%">
-  <img src="examples/Fresh%20Air.png" alt="Fresh Air widget saying the windows can be opened" width="49%">
-  <img src="examples/Sunset%20Score.png" alt="Sunset Score widget rating tonight's sunset" width="49%">
+  <img src="examples/Train%20Commute.png" alt="Train Commute widget showing the next train and delays" width="49%">
+  <img src="examples/Weekly%20Load.png" alt="Weekly Load widget with booked hours per day for this week and next" width="49%">
+  <img src="examples/Air%20Out.png" alt="Air Out widget saying the windows can be opened now" width="49%">
+  <img src="examples/Water.png" alt="Water widget tracking glasses of water today" width="49%">
 </p>
 
 Got your own idea? Describe it in one sentence, and your AI builds it.
