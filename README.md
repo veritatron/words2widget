@@ -16,42 +16,43 @@
 
 ## Make the widget you always wanted
 
-Most widgets show you numbers. Yours can answer a question. Tap one to get it, ready to copy onto your iPhone.
+Most widgets show you numbers. Yours can answer your questions.
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="examples/Train%20Commute.md"><img src="examples/Train%20Commute.png" alt="Train Commute widget showing the next train and delays"></a>
-      <br><em>"Which train should I take, and is it on time?"</em>
-    </td>
-    <td width="50%" valign="top">
-      <a href="examples/Weekly%20Load.md"><img src="examples/Weekly%20Load.png" alt="Weekly Load widget with booked hours per day for this week and next"></a>
-      <br><em>"How full are this week and next week?"</em>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="examples/Air%20Out.md"><img src="examples/Air%20Out.png" alt="Air Out widget saying the windows can be opened now"></a>
-      <br><em>"Should I open the windows right now?"</em>
-    </td>
-    <td width="50%" valign="top">
-      <a href="examples/Run%20Today.md"><img src="examples/Run%20Today.png" alt="Run Today widget with the current weather for a run"></a>
-      <br><em>"Is today a good day for a run?"</em>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="examples/Water.md"><img src="examples/Water.png" alt="Water widget tracking glasses of water today"></a>
-      <br><em>"Have I had enough water today?"</em>
-    </td>
-    <td width="50%" valign="top">
-      <a href="examples/Top%20Repos.md"><img src="examples/Top%20Repos.png" alt="Top Repos widget listing this week's most-starred GitHub repositories"></a>
-      <br><em>"What's taking off on GitHub this week?"</em>
-    </td>
-  </tr>
-</table>
+<h3 align="center">It answers your question</h3>
 
-Got your own idea? Describe it in one sentence, and your AI builds it.
+<p align="center">Ask something real and get a clear answer at a glance, right on your home screen.</p>
+
+<p align="center">
+  <a href="examples/Train%20Commute.md"><img src="examples/Train%20Commute.png" alt="Train Commute widget showing the next train and delays" width="49%"></a>
+  <a href="examples/Air%20Out.md"><img src="examples/Air%20Out.png" alt="Air Out widget saying the windows can be opened now" width="49%"></a>
+</p>
+
+<h3 align="center">It fits your home screen</h3>
+
+<p align="center">Small, medium or large. The layout adapts to the size you pick.</p>
+
+<p align="center">
+  <img src="assets/sizes.png" alt="The Train Commute widget in small, medium and large" width="80%">
+</p>
+
+<h3 align="center">It's built around your life</h3>
+
+<p align="center">Your calendar, your habits, your next run, the things you care about.</p>
+
+<p align="center">
+  <a href="examples/Weekly%20Load.md"><img src="examples/Weekly%20Load.png" alt="Weekly Load widget with booked hours per day for this week and next" width="49%"></a>
+  <a href="examples/Water.md"><img src="examples/Water.png" alt="Water widget tracking glasses of water today" width="49%"></a>
+</p>
+<p align="center">
+  <a href="examples/Run%20Today.md"><img src="examples/Run%20Today.png" alt="Run Today widget with the current weather for a run" width="49%"></a>
+  <a href="examples/Top%20Repos.md"><img src="examples/Top%20Repos.png" alt="Top Repos widget listing this week's most-starred GitHub repositories" width="49%"></a>
+</p>
+
+<h3 align="center">It works with the AI you already use</h3>
+
+<p align="center">Claude, ChatGPT, Gemini or a free chatbot. No API key, no subscription, no coding.</p>
+
+<p align="center"><strong>Tap any widget to get it.</strong> Got your own idea? Describe it in one sentence, and your AI builds it.</p>
 
 ## Quickstart
 
