@@ -43,16 +43,16 @@ Small, medium or large. The layout adapts, so every size is made to be read at a
 <br clear="both">
 <br>
 
-<img align="right" width="50%" src="assets/feature-design.png" alt="The same Top Repos widget in a clean style and in a terminal style">
+<h3 align="center">In any style you want</h3>
 
-### In any style you want
+<p align="center">Clean like Apple, retro like a terminal, loud, playful or in your team's colors.<br>Just say how it should look, and your widget follows.</p>
 
-Clean like Apple, retro like a terminal, loud, playful or in your team's colors. Just say how it should look, and your widget follows.
+<p align="center"><img width="100%" src="assets/feature-design.png" alt="The same Top Repos widget in a clean style and in a terminal style"></p>
 
 <br clear="both">
 <br>
 
-<img align="left" hspace="14" width="46%" src="assets/feature-day.png" alt="Weekly Load widget with booked hours per day for this week and next">
+<img align="right" width="46%" src="assets/feature-day.png" alt="Weekly Load widget with booked hours per day for this week and next">
 
 ### Built around your day
 
@@ -61,7 +61,7 @@ Your calendar, reminders, location and the weather outside. Your widget uses wha
 <br clear="both">
 <br>
 
-<img align="right" width="46%" src="assets/feature-any-ai.png" alt="Claude, ChatGPT, Gemini or any free chatbot, with no API key and no cost">
+<img align="left" hspace="14" width="46%" src="assets/feature-any-ai.png" alt="Claude, ChatGPT, Gemini or any free chatbot, with no API key and no cost">
 
 ### Works with the AI you already use
 
