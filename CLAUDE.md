@@ -85,7 +85,7 @@ words2widget/
 - Prefer data sources without API keys, such as Open-Meteo, or native data like calendar events and battery level.
 - Every example comes with a screenshot (`<name>.png`) for the README.
 - Prefer widgets that answer a question over widgets that only show data.
-- Current set: Air Out, Train Commute, Weekly Load, Run Today, Water, Top Repos.
+- Current set: Air Out, Train Commute, Weekly Load, Run Today, Top Repos.
 
 ## Conventions
 

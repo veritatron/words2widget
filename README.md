@@ -76,11 +76,10 @@ Got your own? Describe it in one sentence, and your AI builds it.
 
 <p align="center">
   <img src="assets/card-air-out.png" alt="Air Out widget saying the windows can be opened now" width="49%">
-  <img src="assets/card-water.png" alt="Water widget tracking glasses of water today" width="49%">
+  <img src="assets/card-top-repos.png" alt="Top Repos widget listing this week's most-starred GitHub repositories" width="49%">
 </p>
 <p align="center">
   <img src="assets/card-run-today.png" alt="Run Today widget with the current weather for a run" width="49%">
-  <img src="assets/card-top-repos.png" alt="Top Repos widget listing this week's most-starred GitHub repositories" width="49%">
 </p>
 
 <sub>Train Commute uses timetable data from <a href="https://transitous.org">Transitous</a> and <a href="https://transitous.org/sources/">its data sources</a>, including OpenStreetMap.</sub>
