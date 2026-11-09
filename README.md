@@ -47,7 +47,7 @@ Small, medium or large. The layout adapts, so every size is made to be read at a
 
 <p align="center">Clean like Apple, retro like a terminal, loud, playful or in your team's colors.<br>Just say how it should look, and your widget follows.</p>
 
-<p align="center"><img width="100%" src="assets/feature-design.png" alt="The same Top Repos widget in a clean style and in a terminal style"></p>
+<p align="center"><img width="76%" src="assets/feature-design.png" alt="The same Top Repos widget in a clean style and in a terminal style"></p>
 
 <br clear="both">
 <br>
