@@ -34,7 +34,7 @@ Ask your AI the way you'd ask a friend. You get a finished widget back and never
 <br clear="both">
 <br>
 
-<img align="left" hspace="14" width="46%" src="assets/sizes.png" alt="The Train Commute widget in small, medium and large">
+<img align="left" hspace="14" width="50%" src="assets/sizes.png" alt="The Train Commute widget in small, medium and large">
 
 ### Pick the size that fits
 
@@ -43,7 +43,7 @@ Small, medium or large. The layout adapts, so every size is made to be read at a
 <br clear="both">
 <br>
 
-<img align="right" width="46%" src="assets/feature-design.png" alt="The same Top Repos widget in a clean style and in a terminal style">
+<img align="right" width="50%" src="assets/feature-design.png" alt="The same Top Repos widget in a clean style and in a terminal style">
 
 ### In any style you want
 
