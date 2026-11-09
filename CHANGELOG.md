@@ -2,6 +2,14 @@
 
 All notable changes to this project are documented in this file. The project follows [Semantic Versioning](https://semver.org).
 
+## [Unreleased]
+
+### Changed
+
+- Replaced the example widgets with Air Out, Train Commute, Weekly Load, Run Today, Water and Top Repos
+- Reworked the README, demo GIF and social preview in the veritatron design
+- Added `URLScheme` and Shortcuts input to the skill and `PROMPT.md`, so widgets can log something with a tap
+
 ## [0.1.0] - 2026-11-08
 
 First public version.

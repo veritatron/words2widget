@@ -92,7 +92,7 @@ words2widget/
 - **Language:** Everything is in English: code, comments, docs, README, `PROMPT.md`, commit messages.
 - **JavaScript:** Modern JavaScript as supported by Scriptable (top-level `await`, `async`/`await`, optional chaining). No TypeScript, no build step, no npm dependencies in Scriptable scripts.
 - **Scriptable limits:** No DOM, no `fetch`, no `require`, no `localStorage`. Networking only via `Request`, files via `FileManager`. Details are in the skill.
-- **File names:** Scriptable scripts are named exactly as they should appear in the app, with spaces and capitals (`Widget Installer.js`, `Weather.js`).
+- **File names:** Scriptable scripts are named exactly as they should appear in the app, with spaces and capitals (`Widget Installer.js`, `Train Commute.js`).
 - **Metadata header:** Every Scriptable script starts with Scriptable's comment header (`icon-color`, `icon-glyph`).
 - **Commits:** Conventional Commits (`feat:`, `fix:`, `docs:`, `chore:`).
 
