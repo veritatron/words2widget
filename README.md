@@ -22,42 +22,30 @@ Most widgets show you numbers. Yours can answer a question. Tap one to get it, r
   <tr>
     <td width="50%" valign="top">
       <a href="examples/Train%20Commute.md"><img src="examples/Train%20Commute.png" alt="Train Commute widget showing the next train and delays"></a>
-      <br><sub>COMMUTE</sub>
-      <br><strong>Train Commute</strong>
       <br><em>"Which train should I take, and is it on time?"</em>
     </td>
     <td width="50%" valign="top">
       <a href="examples/Weekly%20Load.md"><img src="examples/Weekly%20Load.png" alt="Weekly Load widget with booked hours per day for this week and next"></a>
-      <br><sub>CALENDAR</sub>
-      <br><strong>Weekly Load</strong>
       <br><em>"How full are this week and next week?"</em>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <a href="examples/Air%20Out.md"><img src="examples/Air%20Out.png" alt="Air Out widget saying the windows can be opened now"></a>
-      <br><sub>HOME AND AIR</sub>
-      <br><strong>Air Out</strong>
       <br><em>"Should I open the windows right now?"</em>
     </td>
     <td width="50%" valign="top">
       <a href="examples/Run%20Today.md"><img src="examples/Run%20Today.png" alt="Run Today widget with the current weather for a run"></a>
-      <br><sub>FITNESS</sub>
-      <br><strong>Run Today</strong>
       <br><em>"Is today a good day for a run?"</em>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <a href="examples/Water.md"><img src="examples/Water.png" alt="Water widget tracking glasses of water today"></a>
-      <br><sub>HABITS</sub>
-      <br><strong>Water</strong>
       <br><em>"Have I had enough water today?"</em>
     </td>
     <td width="50%" valign="top">
       <a href="examples/Top%20Repos.md"><img src="examples/Top%20Repos.png" alt="Top Repos widget listing this week's most-starred GitHub repositories"></a>
-      <br><sub>DEVELOPERS</sub>
-      <br><strong>Top Repos</strong>
       <br><em>"What's taking off on GitHub this week?"</em>
     </td>
   </tr>
