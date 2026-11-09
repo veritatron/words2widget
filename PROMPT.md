@@ -34,7 +34,7 @@ SCRIPT RULES
 - Scriptable has no fetch, document, window, require, localStorage, import or export, and no npm packages. Use Request and FileManager.
 - Never use triple backticks inside the code.
 - Widgets can't animate or show Alert, and taps can only open a URL. For a live countdown, use addDate with applyTimerStyle().
-- To log something with a tap, set widget.url to URLScheme.forRunningScript() plus "?add=1" and handle args.queryParameters.add when the script runs. The tap briefly opens Scriptable, and iOS decides when the widget redraws, so tell the user in one sentence.
+- To log something with a tap, set widget.url to URLScheme.forRunningScript() plus "?add=1" and handle args.queryParameters.add when the script runs, without showing the widget preview. The tap opens Scriptable, and iOS decides when the widget redraws, so tell the user in one sentence.
 - Home screen sizes only. If asked for a lock screen widget, build a home screen widget and say so in one sentence.
 
 DESIGN

@@ -409,8 +409,10 @@ function buildWidget(size, goal, note) {
 
 const goal = readGoal();
 let note = null;
+let glassWasLogged = false;
 try {
     note = handleTap();
+    glassWasLogged = note !== null;
 } catch {
     note = "Couldn't save this glass";
 }
@@ -420,7 +422,8 @@ const widget = buildWidget(size, goal, note);
 
 Script.setWidget(widget);
 
-if (!config.runsInWidget) {
+// After a tap the glass is saved, so there is nothing to preview.
+if (!config.runsInWidget && !glassWasLogged) {
     if (size === "medium") await widget.presentMedium();
     else if (size === "large") await widget.presentLarge();
     else await widget.presentSmall();
