@@ -18,41 +18,56 @@
 
 Most widgets show you numbers. Yours can answer your questions.
 
-<h3 align="center">It answers your question</h3>
+<br>
 
-<p align="center">Ask something real and get a clear answer at a glance, right on your home screen.</p>
+<a href="examples/Train%20Commute.md"><img align="right" width="46%" src="assets/feature-sentence.png" alt="A sentence asking about a train, above the finished Train Commute widget"></a>
+
+### Say it in one sentence
+
+Ask your AI the way you'd ask a friend. You get a finished widget back and never touch the code.
+
+<br clear="both">
+<br>
+
+<img align="left" hspace="14" width="46%" src="assets/sizes.png" alt="The Train Commute widget in small, medium and large">
+
+### Pick the size that fits
+
+Small, medium or large. The layout adapts, so every size is made to be read at a glance.
+
+<br clear="both">
+<br>
+
+<a href="examples/Weekly%20Load.md"><img align="right" width="46%" src="examples/Weekly%20Load.png" alt="Weekly Load widget with booked hours per day for this week and next"></a>
+
+### Built around your day
+
+Your calendar, reminders, location and the weather outside. Your widget uses what matters to you.
+
+<br clear="both">
+<br>
+
+<img align="left" hspace="14" width="46%" src="assets/feature-any-ai.png" alt="Claude, ChatGPT, Gemini or any free chatbot, with no API key and no cost">
+
+### Works with the AI you already use
+
+No new app to learn, no API key and no subscription. Scriptable is free, and the setup takes five minutes.
+
+<br clear="both">
+<br>
+
+### Start with one of these
+
+Tap a widget, copy it, and it's yours. Got your own idea? Describe it in one sentence.
 
 <p align="center">
-  <a href="examples/Train%20Commute.md"><img src="examples/Train%20Commute.png" alt="Train Commute widget showing the next train and delays" width="49%"></a>
   <a href="examples/Air%20Out.md"><img src="examples/Air%20Out.png" alt="Air Out widget saying the windows can be opened now" width="49%"></a>
-</p>
-
-<h3 align="center">It fits your home screen</h3>
-
-<p align="center">Small, medium or large. The layout adapts to the size you pick.</p>
-
-<p align="center">
-  <img src="assets/sizes.png" alt="The Train Commute widget in small, medium and large" width="80%">
-</p>
-
-<h3 align="center">It's built around your life</h3>
-
-<p align="center">Your calendar, your habits, your next run, the things you care about.</p>
-
-<p align="center">
-  <a href="examples/Weekly%20Load.md"><img src="examples/Weekly%20Load.png" alt="Weekly Load widget with booked hours per day for this week and next" width="49%"></a>
   <a href="examples/Water.md"><img src="examples/Water.png" alt="Water widget tracking glasses of water today" width="49%"></a>
 </p>
 <p align="center">
   <a href="examples/Run%20Today.md"><img src="examples/Run%20Today.png" alt="Run Today widget with the current weather for a run" width="49%"></a>
   <a href="examples/Top%20Repos.md"><img src="examples/Top%20Repos.png" alt="Top Repos widget listing this week's most-starred GitHub repositories" width="49%"></a>
 </p>
-
-<h3 align="center">It works with the AI you already use</h3>
-
-<p align="center">Claude, ChatGPT, Gemini or a free chatbot. No API key, no subscription, no coding.</p>
-
-<p align="center"><strong>Tap any widget to get it.</strong> Got your own idea? Describe it in one sentence, and your AI builds it.</p>
 
 ## Quickstart
 
